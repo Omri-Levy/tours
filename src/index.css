@@ -30,6 +30,7 @@ html, body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -62,4 +63,10 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+html, body, #root, .app {
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
 }

@@ -1,10 +1,17 @@
 import './App.css';
+import React from 'react';
+import Tours from '../Tours';
+import {HelmetProvider} from 'react-helmet-async';
+import Head from '../Head';
 
-const App = () => {
+const App: React.FunctionComponent = () => {
 	return (
-		<div className={'App'}>
-			<h1>Hello from App.</h1>
-		</div>
+		<HelmetProvider>
+			<Head/>
+			<main className={'App'}>
+				<Tours/>
+			</main>
+		</HelmetProvider>
 	);
 };
 
